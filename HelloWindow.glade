@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.38.2 -->
+<interface domain="python-gtk-hello-world">
+  <requires lib="gtk+" version="3.24"/>
+  <object class="GtkAboutDialog" id="HelloWindowAboutDialog">
+    <property name="can-focus">False</property>
+    <property name="type-hint">dialog</property>
+    <property name="program-name">Python GTK+ Hello World</property>
+    <property name="version">0.1</property>
+    <property name="comments" translatable="yes">Python GTK+ Example Application</property>
+    <property name="website">https://github.com/eersoy93/python-gtk-hello-world</property>
+    <property name="website-label" translatable="yes">Website</property>
+    <property name="license" translatable="yes">Licensed with CC0-1.0. See LICENSE file for details.</property>
+    <property name="authors">Erdem Ersoy (eersoy93)</property>
+    <property name="documenters">Erdem Ersoy (eersoy93)</property>
+    <property name="translator-credits" translatable="yes">Erdem Ersoy (eersoy93)</property>
+    <property name="logo-icon-name">application-x-executable</property>
+    <property name="license-type">custom</property>
+    <child internal-child="vbox">
+      <object class="GtkBox">
+        <property name="can-focus">False</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">2</property>
+        <child internal-child="action_area">
+          <object class="GtkButtonBox">
+            <property name="can-focus">False</property>
+            <property name="layout-style">end</property>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">False</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkImage" id="HelloWindowExitImage">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="icon-name">application-exit</property>
+    <property name="icon_size">6</property>
+  </object>
+  <object class="GtkMenu" id="HelloWindowMenu">
+    <property name="visible">True</property>
+    <property name="can-focus">True</property>
+    <child>
+      <object class="GtkMenuItem" id="HelloWindowMenuAbout">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <property name="label" translatable="yes">About</property>
+        <property name="use-underline">True</property>
+        <signal name="activate" handler="OnClickedMenuAbout" swapped="no"/>
+      </object>
+    </child>
+  </object>
+  <object class="GtkApplicationWindow" id="HelloWindow">
+    <property name="can-focus">False</property>
+    <property name="default-width">600</property>
+    <property name="default-height">400</property>
+    <property name="icon-name">application-x-executable</property>
+    <property name="show-menubar">False</property>
+    <child>
+      <object class="GtkBox" id="HelloWindowBox">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">6</property>
+        <property name="homogeneous">True</property>
+        <child>
+          <object class="GtkLabel" id="HelloWindowLabel">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Hello, World!</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans Bold 18"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="expand">True</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="HelloWindowExitButton">
+            <property name="label" translatable="yes">Exit</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="image">HelloWindowExitImage</property>
+            <property name="image-position">top</property>
+            <property name="always-show-image">True</property>
+            <signal name="clicked" handler="OnClickedExit" swapped="no"/>
+          </object>
+          <packing>
+            <property name="expand">True</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+    <child type="titlebar">
+      <object class="GtkHeaderBar" id="HelloWindowHeaderBar">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="receives-default">True</property>
+        <property name="title" translatable="yes">Python GTK+ Hello World</property>
+        <property name="subtitle" translatable="yes">Python GTK+ Example Application</property>
+        <property name="show-close-button">True</property>
+        <child>
+          <object class="GtkMenuButton" id="HelloWindowMenuButton">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="focus-on-click">False</property>
+            <property name="receives-default">True</property>
+            <property name="popup">HelloWindowMenu</property>
+            <property name="use-popover">False</property>
+            <child>
+              <object class="GtkImage" id="HelloWindowMenuButtonImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="icon-name">go-down</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

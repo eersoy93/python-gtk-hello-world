@@ -1,0 +1,56 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Python GTK+ Hello World\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-02-17 12:36+0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Erdem Ersoy <erdemersoy@erdemersoy.net>\n"
+"Language-Team: Erdem Ersoy\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.2\n"
+
+#: HelloWindow.glade:10 HelloWindow.glade:119
+msgid "Python GTK+ Example Application"
+msgstr "Python GTK+ Örnek Uygulama"
+
+#: HelloWindow.glade:12
+msgid "Website"
+msgstr "Ağ Sitesi"
+
+#: HelloWindow.glade:13
+msgid "Licensed with CC0-1.0. See LICENSE file for details."
+msgstr "CC0-1.0 ile lisanslanmıştır. Ayrıntılar için LICENSE dosyasına bakınız."
+
+#: HelloWindow.glade:16
+msgid "Erdem Ersoy (eersoy93)"
+msgstr "Erdem Ersoy (eersoy93)"
+
+#: HelloWindow.glade:60
+msgid "About"
+msgstr "Hakkında"
+
+#: HelloWindow.glade:83
+msgid "Hello, World!"
+msgstr "Merhaba, Dünya!"
+
+#: HelloWindow.glade:96
+msgid "Exit"
+msgstr "Çıkış"
+
+#: HelloWindow.glade:118
+msgid "Python GTK+ Hello World"
+msgstr "Python GTK+ Merhaba Dünya"
+
+#~ msgid "Test"
+#~ msgstr "Deneme"
+
+#~ msgid "FATAL: Error reading GUI file: "
+#~ msgstr "ÖLÜMCÜL: GUI dosyasını okumada hata: "
+
+#, fuzzy
+#~ msgctxt "python-gtk-hello-world"
+#~ msgid "Exit"
+#~ msgstr "ÇIkış"
